@@ -9,5 +9,4 @@ public class OpensourceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(OpensourceApplication.class, args);
 	}
-
 }
