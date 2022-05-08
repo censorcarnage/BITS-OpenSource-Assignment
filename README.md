@@ -8,3 +8,8 @@
 ## Project Tech Stack
 ### Backend Framework
 Spring Boot
+
+### ORM Version
+
+    | Spring Data JPA | 3.0.0-SNAPSHOT |
+    | Spring Framework ORM | 6.0.0-SNAPSHOT |
