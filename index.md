@@ -11,8 +11,44 @@ The README file is often the first file which the users read. It is a text file 
 
 This page is constructed using the feature Pages provided by Github. This page is built using the branch ```gh-pages``` . The content of the page is placed in the ```index.md``` file while the theme is placed in the ```_config.yml```  file.
 
-## Project Code
+## Project Architecture
 
 The project code consists of a Spring Boot Application with an embedded H2 database. The database has insert queries which are executed on application startup. The project architecture is as below
 
 ![Project Architecture](Arch.jpg)
+
+
+## API Type
+
+GET http://{deploymentIP}:8080/countries
+
+## Responses from the API
+
+### Success Response
+
+```
+{
+  "meta": {
+    "errorCode": "C_000",
+    "errorMessage": "Fetching countries successful."
+  },
+  "data": [
+    "USA",
+    "France",
+    "Brazil",
+    "Italy",
+    "Canada"
+  ]
+}
+```
+
+### Failure Response
+
+```
+{
+  "meta": {
+    "errorCode": "C_001",
+    "errorMessage": "Failure in fetching countries."
+  }
+}
+```
