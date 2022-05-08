@@ -13,3 +13,18 @@ Spring Boot
 
     | Spring Data JPA | 3.0.0-SNAPSHOT |
     | Spring Framework ORM | 6.0.0-SNAPSHOT |
+
+## Project Data Models
+
+## Database Entity
+
+@Entity
+@Table(name = "countries")
+@Data
+public class Countries {
+
+    @Id
+    private Long id;
+
+    private String name;
+}
